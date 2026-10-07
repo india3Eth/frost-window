@@ -66,7 +66,7 @@ Open http://localhost:3000.
 | `OLLAMA_HOST` | `http://127.0.0.1:11434` | any Ollama server |
 | `OLLAMA_MODEL` | `qwen3:4b` | any model that supports structured outputs, e.g. `gemma3:4b`, `llama3.2:3b` |
 
-A plan takes 8–20 seconds on an M2 MacBook Air (8 GB), most of it model time. Weather history is cached per location for a day.
+A plan takes 8–20 seconds on an 8 GB M2 Mac, most of it model time. Weather history is cached per location for a day.
 
 ## Checks
 
