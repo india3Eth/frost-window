@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #f4f1e8;
+  --card: #fffdf7;
+  --ink: #1d2a1e;
+  --muted: #5d6b5c;
+  --line: #ddd8c8;
+  --leaf: #3d6b35;
+  --leaf-soft: #e3ecd9;
+  --frost: #3f74a8;
+  --frost-soft: #dbe7f3;
+  --frost-faint: #edf3f9;
+  --sun: #b7791f;
+  --sun-soft: #f6ead2;
+  --danger: #a33a2c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #121612;
+    --card: #1a201a;
+    --ink: #e7ece4;
+    --muted: #9aa797;
+    --line: #2d362c;
+    --leaf: #8cc47e;
+    --leaf-soft: #22301f;
+    --frost: #8fb8e0;
+    --frost-soft: #1f3044;
+    --frost-faint: #182330;
+    --sun: #e4b25a;
+    --sun-soft: #33291a;
+    --danger: #e08a7c;
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-leaf: var(--leaf);
+  --color-leaf-soft: var(--leaf-soft);
+  --color-frost: var(--frost);
+  --color-frost-soft: var(--frost-soft);
+  --color-frost-faint: var(--frost-faint);
+  --color-sun: var(--sun);
+  --color-sun-soft: var(--sun-soft);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
 }
